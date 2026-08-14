@@ -35,20 +35,22 @@ export function HomePage() {
               <span><Search /></span>
               <div><small>بحث سريع</small><b>ابدأ رحلة البحث</b><p>حدّد موقعك للوصول إلى العقارات المناسبة</p></div>
             </div>
-            <div className="search-fields">
-              <label>
-                <span className="search-field-label">المحافظة <small>خطوة ١</small></span>
-                <span className="search-select"><MapPin /><select value={govId} onChange={(event) => { setGovId(event.target.value); setAreaId(""); }}><option value="">اختر المحافظة</option>{data.governorates.map((governorate) => <option key={governorate.id} value={governorate.id}>{governorate.name}</option>)}</select></span>
-              </label>
-              <label>
-                <span className="search-field-label">المنطقة <small>خطوة ٢</small></span>
-                <span className="search-select"><Map /><select value={areaId} onChange={(event) => setAreaId(event.target.value)} disabled={!govId}><option value="">{govId ? "اختر المنطقة" : "اختر المحافظة أولًا"}</option>{areas.map((area) => <option key={area.id} value={area.id}>{area.name}</option>)}</select></span>
-              </label>
+            <div className="search-actions">
+              <div className="search-fields">
+                <label>
+                  <span className="search-field-label">المحافظة <small>خطوة ١</small></span>
+                  <span className="search-select"><MapPin /><select value={govId} onChange={(event) => { setGovId(event.target.value); setAreaId(""); }}><option value="">اختر المحافظة</option>{data.governorates.map((governorate) => <option key={governorate.id} value={governorate.id}>{governorate.name}</option>)}</select></span>
+                </label>
+                <label>
+                  <span className="search-field-label">المنطقة <small>خطوة ٢</small></span>
+                  <span className="search-select"><Map /><select value={areaId} onChange={(event) => setAreaId(event.target.value)} disabled={!govId}><option value="">{govId ? "اختر المنطقة" : "اختر المحافظة أولًا"}</option>{areas.map((area) => <option key={area.id} value={area.id}>{area.name}</option>)}</select></span>
+                </label>
+              </div>
+              <Link href={href} className="search-submit">
+                <span><b>{areaId ? "عرض العقارات" : govId ? "استكشف المحافظة" : "عرض كل المحافظات"}</b><small>{areaId ? "شاهد العقارات المتاحة في المنطقة" : "ابدأ التصفح الآن"}</small></span>
+                <ArrowLeft size={20} />
+              </Link>
             </div>
-            <Link href={href} className="search-submit">
-              <span><b>{areaId ? "عرض العقارات" : govId ? "استكشف المحافظة" : "عرض كل المحافظات"}</b><small>{areaId ? "شاهد العقارات المتاحة في المنطقة" : "ابدأ التصفح الآن"}</small></span>
-              <ArrowLeft size={20} />
-            </Link>
           </div>
         </div>
         <div className="hero-strip container">
