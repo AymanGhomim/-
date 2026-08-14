@@ -101,3 +101,23 @@
 @media(max-width:1050px) and (min-width:781px){.nav-inner{gap:14px}.nav-page-links a{padding-inline:9px;font-size:11px}.mobile-admin{padding-inline:11px}.brand-copy small{display:none}}
 @media(max-width:780px){.site-header{height:68px}.brand>.brand-mark{width:40px;height:40px;border-radius:12px}.brand-copy b{font-size:18px}.brand-copy small{display:none}.menu-button{z-index:4;display:grid}.nav-links{position:fixed;z-index:3;top:80px;right:13px;left:13px;display:none;align-items:stretch;gap:10px;padding:12px;border:1px solid rgba(7,26,43,.08);border-radius:20px;background:rgba(255,255,255,.98);box-shadow:0 28px 80px rgba(3,13,21,.24);transform-origin:top;animation:navReveal .18s ease-out}.nav-links.open{display:flex}.nav-page-links{width:100%;flex-direction:column;align-items:stretch;gap:3px;padding:4px;border:0;border-radius:14px;background:#f5f6f5}.nav-page-links a{padding:11px 13px;border-radius:10px;font-size:12px}.nav-page-links a.active:after{right:13px;bottom:50%;width:3px;height:17px;transform:translateY(50%)}.mobile-admin{width:100%;justify-content:space-between;margin:0;padding:12px 15px}.nav-backdrop{position:fixed;z-index:2;inset:68px 0 0;display:block;border:0;background:rgba(3,13,21,.42);backdrop-filter:blur(2px)}}
 @keyframes navReveal{from{opacity:0;transform:translateY(-8px) scale(.985)}to{opacity:1;transform:none}}
+
+/* Compact glass search card */
+.hero .search-panel{width:min(900px,100%);padding:19px 20px 20px;border:1px solid rgba(255,255,255,.2);border-radius:21px;background:linear-gradient(135deg,rgba(7,26,43,.84),rgba(12,41,66,.74));box-shadow:0 18px 50px rgba(0,0,0,.22);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px)}
+.hero .search-panel-title{gap:10px;margin-bottom:14px}
+.hero .search-panel-title>span{width:42px;height:42px;border-radius:12px}
+.hero .search-panel-title>span svg{width:19px;height:19px}
+.hero .search-panel-title div>small{font-size:7px}
+.hero .search-panel-title b{font-size:18px;line-height:1.25}
+.hero .search-panel-title p{margin-top:1px;font-size:8px}
+.hero .search-actions{grid-template-columns:minmax(0,1fr) 260px;gap:11px}
+.hero .search-fields{gap:11px}
+.hero .search-field-label{gap:6px;font-size:9px}
+.hero .search-field-label small{padding:2px 6px;font-size:7px}
+.hero .search-select select{height:50px;padding-right:43px;font-size:10px;border-radius:11px}
+.hero .search-select>svg{right:14px;width:16px}
+.hero .search-actions .search-submit{min-height:50px;padding:8px 11px;border-radius:11px}
+.hero .search-submit b{font-size:12px}
+.hero .search-submit small{font-size:7px}
+.hero .search-submit>svg{width:32px;height:32px;padding:7px;border-radius:9px}
+@media(max-width:780px){.hero .search-panel{padding:15px;border-radius:17px}.hero .search-panel-title{margin-bottom:12px}.hero .search-panel-title>span{width:39px;height:39px}.hero .search-panel-title b{font-size:16px}.hero .search-actions{grid-template-columns:minmax(0,1fr);gap:10px}.hero .search-select select{height:47px}.hero .search-actions .search-submit{min-height:48px}}
