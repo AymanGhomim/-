@@ -121,3 +121,7 @@
 .hero .search-submit small{font-size:7px}
 .hero .search-submit>svg{width:32px;height:32px;padding:7px;border-radius:9px}
 @media(max-width:780px){.hero .search-panel{padding:15px;border-radius:17px}.hero .search-panel-title{margin-bottom:12px}.hero .search-panel-title>span{width:39px;height:39px}.hero .search-panel-title b{font-size:16px}.hero .search-actions{grid-template-columns:minmax(0,1fr);gap:10px}.hero .search-select select{height:47px}.hero .search-actions .search-submit{min-height:48px}}
+.place-card,.building-card{cursor:pointer}
+.place-card:focus-visible,.building-card:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.place-card .card-link svg,.building-card .card-link svg{transition:transform .2s}
+.place-card:hover .card-link svg,.building-card:hover .card-link svg{transform:translateX(-4px)}
