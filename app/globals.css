@@ -54,3 +54,22 @@
 .hero .search-submit{max-width:360px;margin-right:auto;margin-left:31px}
 .hero-strip{margin-top:52px}
 @media(max-width:780px){.hero-content{gap:30px}.hero .search-panel{width:100%}.hero .search-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hero .search-fields{padding:21px 16px 0}.hero .search-field-label small{display:none}.hero .search-select>svg{display:none}.hero .search-select select{height:52px;padding-right:11px;padding-left:28px;font-size:10px}.hero .search-select:after{left:10px;font-size:16px}.hero .search-submit{width:calc(100% - 32px);max-width:none;margin:17px 16px 20px}.hero-strip{margin-top:36px}}
+
+/* Compact search controls directly on the hero */
+.hero-content{gap:36px}
+.hero .search-panel{width:min(900px,100%);overflow:visible;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.hero .search-panel-title{isolation:auto;gap:12px;margin:0 0 18px;padding:0;background:transparent}
+.hero .search-panel-title:after{display:none}
+.hero .search-panel-title>span{width:48px;height:48px;border:1px solid rgba(227,189,102,.38);border-radius:14px;background:rgba(7,26,43,.56);color:var(--gold2);backdrop-filter:blur(8px)}
+.hero .search-panel-title>span svg{width:21px;height:21px}
+.hero .search-panel-title div>small{color:var(--gold2);font-size:8px}
+.hero .search-panel-title b{font-size:20px}
+.hero .search-panel-title p{color:#c4d0d7;font-size:10px}
+.hero .search-fields{gap:14px;padding:0}
+.hero .search-field-label{color:#fff;font-size:11px}
+.hero .search-field-label small{background:rgba(227,189,102,.16);color:var(--gold2)}
+.hero .search-select select{height:56px;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.97);box-shadow:0 10px 28px rgba(0,0,0,.12)}
+.hero .search-select select:disabled{border-color:rgba(255,255,255,.12);background:rgba(238,241,242,.92)}
+.hero .search-submit{width:300px;min-height:60px;margin:18px 0 0 auto;border-radius:13px}
+.hero-strip{margin-top:44px}
+@media(max-width:780px){.hero-content{gap:27px}.hero .search-panel-title{margin-bottom:14px}.hero .search-panel-title>span{width:44px;height:44px}.hero .search-panel-title b{font-size:17px}.hero .search-fields{padding:0}.hero .search-field-label{font-size:10px}.hero .search-submit{width:100%;min-height:57px;margin:14px 0 0}.hero-strip{margin-top:31px}}

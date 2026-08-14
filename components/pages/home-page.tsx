@@ -31,7 +31,6 @@ export function HomePage() {
           </div>
 
           <div className="search-panel">
-            <div className="search-panel-accent" aria-hidden="true" />
             <div className="search-panel-title">
               <span><Search /></span>
               <div><small>بحث سريع</small><b>ابدأ رحلة البحث</b><p>حدّد موقعك للوصول إلى العقارات المناسبة</p></div>
